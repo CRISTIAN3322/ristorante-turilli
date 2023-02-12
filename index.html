@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom Reset CSs -->
+    <link rel="stylesheet" href="./css/main-reset.css" />
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>🍽 Ristorante Turilli</title>
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor-navegacion">
+        <div class="contenido-navegacion contenedor">
+          <div class="logo">
+            <h2>
+              Ristorante <span class="verde">Tu</span><span>ri</span
+              ><span class="rojo">lli</span>
+            </h2>
+          </div>
+          <nav class="navegacion ocultar">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Menú</a>
+            <a href="#">Chef</a>
+            <a href="#">Contacto</a>
+          </nav>
+          <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+
+      <div class="contenedor-header">
+        <div class="contenedor-encabezado">
+          <div class="texto-encabezado">
+            <h2>Accoglieza!</h2>
+            <a href="#" class="btn bordes">Il nostro menú</a>
+          </div>
+          <video autoplay loop muted>
+            <source src="./assest/video/bg_video.mp4" />
+          </video>
+        </div>
+      </div>
+    </header>
+
+    <section class="contenedor-nosotros contenedor">
+      <div class="texto-nosotros">
+        <p class="titulo-nosotros">Bienvenido a!</p>
+        <h1>Ristorante Turilli</h1>
+        <p>
+          Nuestro Ristorante Turilli, es un lugar acogedor y auténtico que
+          ofrece a sus clientes una experiencia culinaria única. Nos esforzamos
+          por mantener las tradiciones culinarias italianas mientras creamos
+          platos innovadores y sorprendentes. Nuestra carta está llena de platos
+          clásicos italianos, como pasta fresca hecha a mano, pizza de masa
+          delgada y saboresos platos de carne y pescado. También ofrecemos una
+          amplia selección de vinos italianos para complementar perfectamente
+          cualquier comida. Además de la comida, también nos enorgullece ofrecer
+          un ambiente agradable y acogedor para nuestros clientes. Nuestro
+          equipo amable y atento está disponible para ayudar en cualquier
+          momento, y estamos dedicados a hacer que su experiencia sea
+          inolvidable. Si estás buscando una noche de comida italiana auténtica
+          y deliciosa, visita Ristorante Turilli. Estamos seguros de que te
+          encantará tanto la comida como el ambiente. ¡Te esperamos!
+        </p>
+        <a href="#" class="btn btn-rojo">Contactar</a>
+      </div>
+      <div class="imagenes-nostros">
+        <div class="imagen1">
+          <img
+            data-src="./assest/img/nosotros1.webp"
+            alt="mujer comiendo una pizza"
+          />
+        </div>
+        <div class="imagenes2">
+          <img
+            data-src="./assest/img/nosotros2.webp"
+            alt="mujeres cominedo pizza"
+          />
+          <img data-src="./assest/img/nosotros3.webp" alt="plato de pasta" />
+        </div>
+      </div>
+    </section>
+
+    <section class="menu contenedor">
+      <h2 class="texto-menu">Platillos populares</h2>
+      <div class="btn-platillos">
+        <button class="todos btn btn-verde">Todos</button>
+        <button class="ensaladas btn btn-verde">Ensaladas</button>
+        <button class="pasta btn btn-verde">pasta</button>
+        <button class="pizza btn btn-verde">Pizza</button>
+        <button class="postres btn btn-verde">postres</button>
+      </div>
+      <div class="platillos">
+        <!-- + Ensaladas + -->
+        <div class="platillo" data-platillo="ensalada">
+          <img data-src="./assest/product/ensalada.webp" alt="ensalada" />
+          <h2>Quinoa</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button class="btn btn-rojo">
+              <ion-icon name="cash-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="ensalada">
+          <img data-src="./assest/product/ensalada2.webp" alt="ensalada" />
+          <h2>Quinoa</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button class="btn btn-rojo">
+              <ion-icon name="cash-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <!-- + Pastas + -->
+        <div class="platillo" data-platillo="pasta">
+          <img data-src="./assest/product/pasta1.webp" alt="ensalada" />
+          <h2>Quinoa</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button class="btn btn-rojo">
+              <ion-icon name="cash-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="pasta">
+          <img data-src="./assest/product/pasta2.webp" alt="ensalada" />
+          <h2>Quinoa</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button class="btn btn-rojo">
+              <ion-icon name="cash-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <!-- + Pizza + -->
+        <div class="platillo" data-platillo="pizza">
+          <img data-src="./assest/product/pizza1.webp" alt="ensalada" />
+          <h2>Quinoa</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button class="btn btn-rojo">
+              <ion-icon name="cash-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="pizza">
+          <img data-src="./assest/product/pizza2.webp" alt="ensalada" />
+          <h2>Quinoa</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button class="btn btn-rojo">
+              <ion-icon name="cash-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <!-- + Postres + -->
+        <div class="platillo" data-platillo="postre">
+          <img data-src="./assest/product/postres1.webp" alt="ensalada" />
+          <h2>Quinoa</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button class="btn btn-rojo">
+              <ion-icon name="cash-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="postre">
+          <img data-src="./assest/product/postres2.webp" alt="ensalada" />
+          <h2>Quinoa</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button class="btn btn-rojo">
+              <ion-icon name="cash-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="postre">
+          <img data-src="./assest/product/postres3.webp" alt="ensalada" />
+          <h2>Quinoa</h2>
+          <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
+          <div class="precio">
+            <p>$40.0</p>
+            <button class="btn btn-rojo">
+              <ion-icon name="cash-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="separador">
+      <div class="contenido-separador contenedor">
+        <h2>Comida italiana para empezar el dia</h2>
+        <p>Empieza tu día comiendo deliciosa comida o un café italiano</p>
+        <a href="#" class="btn btn-verde">Oedenar ahora</a>
+      </div>
+    </section>
+
+    <section class="chef contenedor">
+      <h2>Chef ejecutivo</h2>
+      <div class="contenido-chef">
+        <div class="texto-chef">
+          <h3>
+            La exelencia esta en la diversidady modo de progresar es conocer y
+            comparar las diversidad de productos, culturas y técnicas.
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+            dolore, repellat eos magnam nihil illum in dignissimos omnis.
+            Nostrum commodi, possimus velit maxime reiciendis labore harum
+            reprehenderit cum necessitatibus, fugit repudiandae voluptate ipsam
+            ducimus consequuntur beatae dolorem iusto officiis. Iure doloribus
+            vitae voluptates exercitationem, voluptatum cum in deserunt sunt
+            asperiores.
+          </p>
+          <a href="#" class="btn btn-verde">leer Biografia</a>
+        </div>
+        <div class="imagen-chef">
+          <img data-src="./assest/img/chef.webp" alt="fotografia del chef" />
+        </div>
+      </div>
+    </section>
+
+    <section class="formulario-contacto contenedor">
+      <div class="informacion-contacto">
+        <h3>Contactanos</h3>
+        <p><ion-icon name="location-outline"></ion-icon> 23. Roma Italia 75012</p>
+        <p><ion-icon name="mail-outline"></ion-icon> luca@turilli.it</p>
+        <p><ion-icon name="call-outline"></ion-icon> +3123410921</p>
+        <div class="redes-sociales">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+        </div>
+      </div>
+      <div class="formulario">
+        <form action="">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Jhon" size="31">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" placeholder="Mendez" size="31">
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" placeholder="correo@dominio.com" size="31">
+          <label for="telefono">Telefono</label>
+          <input type="tel" id="telefono" placeholder="+90 543 779 4010" size="31">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" cols="31" rows="10"></textarea>
+          <button class="btn btn-verde">Enviar</button>
+        </form>
+      </div>
+    </section>
+    
+    <footer class="pie-pagina">
+      <div class="contenedor-piepagina contenedor">
+        <div class="info">
+          <h3>Dirección</h3>
+          <p>23. Roma Italia 75012</p>
+        </div>
+        <div class="info">
+          <h3>Días especiales</h3>
+          <p>sabados y jueves 7am - 11pm</p>
+          <p>+3123410921</p>
+        </div>
+        <div class="info">
+          <h3>Horarios</h3>
+          <p>lunes - domingo 7am - 7pm</p>
+          <div class="redes-sociales">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+          </div>
+        </div>
+        <div class="info">
+          <h3>Noticias</h3>
+          <p>suscribete para recibir m{as noticias</p>
+          <input type="email" placeholder="Tu correo">
+          <input type="submit" value="Suscribirse" class="btn btn-verde">
+        </div>     
+      </div>
+      <div class="footer">
+        <p>Todos los derechos reservados &copy; 2023 - Ristorante Turilli. desarrollado por <span>CCPOVEDA</span></p>
+      </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

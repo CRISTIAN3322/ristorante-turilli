@@ -1,0 +1,165 @@
+/* ========== Reset CSS ========== */
+/* 👉 Custom Properties */
+:root {
+  /* * Colores */
+  --color-primario: #181818;
+  --color-secundario: #f0f0f0;
+
+  /* * Tipografía */
+  --tipo-primario: Helvetica, Arial, sans-serif;
+  --tipo-secundario: Verdana;
+}
+
+/* 👉 Modo Oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primario: #f0f0f0;
+    --color-secundario: #181818;
+  }
+}
+
+/* ! Opcional # 1 */
+/* 👉 Configuración modo alto constrate. (WD) */
+@media (prefers-contrast: high) {
+  :root {
+    --color-primario: black;
+    --color-secundario: white;
+  }
+}
+
+/* ! Opcional # 2 */
+/* 👉 Desactivamos los animations en caso de que el usuario los haya desactivado */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* 👉 Resetear todos los margin y paddings de todas las etiquetas */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* 👉 Resetear imagenes y video */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* ! opcional para la altura */
+  object-fit: cover;
+  /* ! opcional para la altura */
+  object-position: center center;
+}
+
+/* 👉 Reseteo enlaces para que funcione como cajas */
+a {
+  display: block;
+}
+/* = ...excepto los parrafos  */
+p a {
+  display: inline;
+}
+
+/* 👉 Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* 👉 Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 👉 Desactivamos estilos por defecto de las principales etiquetas por defecto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 👉 Evitamos problemas con los pseudoelementos de quotes */
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+/* 👉 Configuramos el texto que seleccionamos */
+::selection {
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+}
+
+/* 👉 Nivelamos problemas de tipografías y colocación de formularios */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+  /* ! opcional */
+  appearance: none;
+}
+
+/* 👉 Reseteamos las tablas */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 👉 Evitamos problemas con SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* 👉 Configuración tipografia para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-primario);
+  color: var(--color-primario);
+  background-color: var(--color-secundario);
+  /* ! opcionales */
+  /* line-height: 1.4em; */
+  hyphens: auto;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
