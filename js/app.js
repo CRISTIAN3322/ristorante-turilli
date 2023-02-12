@@ -47,7 +47,7 @@ const cerrarMenu = (boton, overlay) => {
   };
 };
 
-// ====== Loader Imagenes ====== //
+// ====== Lazy loading Imagenes ====== //
 const imagenes = document.querySelectorAll('img');
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {

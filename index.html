@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/main-reset.css" />
     <!-- custom CSS -->
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- CDN animate on scroll library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>🍽 Ristorante Turilli</title>
   </head>
   <body>
@@ -45,7 +47,7 @@
     </header>
 
     <section class="contenedor-nosotros contenedor">
-      <div class="texto-nosotros">
+      <div class="texto-nosotros" data-aos="fade-right">
         <p class="titulo-nosotros">Bienvenido a!</p>
         <h1>Ristorante Turilli</h1>
         <p>
@@ -67,18 +69,12 @@
         <a href="#" class="btn btn-rojo">Contactar</a>
       </div>
       <div class="imagenes-nostros">
-        <div class="imagen1">
-          <img
-            data-src="./assest/img/nosotros1.webp"
-            alt="mujer comiendo una pizza"
-          />
+        <div class="imagen1" data-aos="fade-down">
+          <img data-src="./assest/img/nosotros1.webp" alt="mujer comiendo una pizza" loading="lazy" />
         </div>
-        <div class="imagenes2">
-          <img
-            data-src="./assest/img/nosotros2.webp"
-            alt="mujeres cominedo pizza"
-          />
-          <img data-src="./assest/img/nosotros3.webp" alt="plato de pasta" />
+        <div class="imagenes2" >
+          <img data-src="./assest/img/nosotros2.webp" alt="mujeres cominedo pizza" loading="lazy" data-aos="fade-up-left"/>
+          <img data-src="./assest/img/nosotros3.webp" alt="plato de pasta" loading="lazy" data-aos="fade-down-left">/>
         </div>
       </div>
     </section>
@@ -94,8 +90,8 @@
       </div>
       <div class="platillos">
         <!-- + Ensaladas + -->
-        <div class="platillo" data-platillo="ensalada">
-          <img data-src="./assest/product/ensalada.webp" alt="ensalada" />
+        <div class="platillo" data-platillo="ensalada" data-aos="flip-left">
+          <img data-src="./assest/product/ensalada.webp" alt="ensalada" loading="lazy"/>
           <h2>Quinoa</h2>
           <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
           <div class="precio">
@@ -105,8 +101,8 @@
             </button>
           </div>
         </div>
-        <div class="platillo" data-platillo="ensalada">
-          <img data-src="./assest/product/ensalada2.webp" alt="ensalada" />
+        <div class="platillo" data-platillo="ensalada" data-aos="flip-left">
+          <img data-src="./assest/product/ensalada2.webp" alt="ensalada" loading="lazy"/>
           <h2>Quinoa</h2>
           <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
           <div class="precio">
@@ -118,8 +114,8 @@
         </div>
 
         <!-- + Pastas + -->
-        <div class="platillo" data-platillo="pasta">
-          <img data-src="./assest/product/pasta1.webp" alt="ensalada" />
+        <div class="platillo" data-platillo="pasta" data-aos="flip-left">
+          <img data-src="./assest/product/pasta1.webp" alt="ensalada" loading="lazy"/>
           <h2>Quinoa</h2>
           <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
           <div class="precio">
@@ -129,8 +125,8 @@
             </button>
           </div>
         </div>
-        <div class="platillo" data-platillo="pasta">
-          <img data-src="./assest/product/pasta2.webp" alt="ensalada" />
+        <div class="platillo" data-platillo="pasta" data-aos="flip-left">
+          <img data-src="./assest/product/pasta2.webp" alt="ensalada" loading="lazy"/>
           <h2>Quinoa</h2>
           <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
           <div class="precio">
@@ -142,8 +138,8 @@
         </div>
 
         <!-- + Pizza + -->
-        <div class="platillo" data-platillo="pizza">
-          <img data-src="./assest/product/pizza1.webp" alt="ensalada" />
+        <div class="platillo" data-platillo="pizza" data-aos="flip-left">
+          <img data-src="./assest/product/pizza1.webp" alt="ensalada" loading="lazy"/>
           <h2>Quinoa</h2>
           <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
           <div class="precio">
@@ -153,8 +149,8 @@
             </button>
           </div>
         </div>
-        <div class="platillo" data-platillo="pizza">
-          <img data-src="./assest/product/pizza2.webp" alt="ensalada" />
+        <div class="platillo" data-platillo="pizza" data-aos="flip-left">
+          <img data-src="./assest/product/pizza2.webp" alt="ensalada" loading="lazy"/>
           <h2>Quinoa</h2>
           <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
           <div class="precio">
@@ -166,8 +162,8 @@
         </div>
 
         <!-- + Postres + -->
-        <div class="platillo" data-platillo="postre">
-          <img data-src="./assest/product/postres1.webp" alt="ensalada" />
+        <div class="platillo" data-platillo="postre" data-aos="flip-left">
+          <img data-src="./assest/product/postres1.webp" alt="ensalada" loading="lazy"/>
           <h2>Quinoa</h2>
           <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
           <div class="precio">
@@ -177,8 +173,8 @@
             </button>
           </div>
         </div>
-        <div class="platillo" data-platillo="postre">
-          <img data-src="./assest/product/postres2.webp" alt="ensalada" />
+        <div class="platillo" data-platillo="postre" data-aos="flip-left">
+          <img data-src="./assest/product/postres2.webp" alt="ensalada" loading="lazy"/>
           <h2>Quinoa</h2>
           <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
           <div class="precio">
@@ -188,8 +184,8 @@
             </button>
           </div>
         </div>
-        <div class="platillo" data-platillo="postre">
-          <img data-src="./assest/product/postres3.webp" alt="ensalada" />
+        <div class="platillo" data-platillo="postre" data-aos="flip-left">
+          <img data-src="./assest/product/postres3.webp" alt="ensalada" loading="lazy"/>
           <h2>Quinoa</h2>
           <p>Quinoa, cerezas, tomate, aceitunas, cereal</p>
           <div class="precio">
@@ -201,7 +197,7 @@
         </div>
       </div>
     </section>
-    <section class="separador">
+    <section class="separador" data-aos="zoom-in">
       <div class="contenido-separador contenedor">
         <h2>Comida italiana para empezar el dia</h2>
         <p>Empieza tu día comiendo deliciosa comida o un café italiano</p>
@@ -210,8 +206,8 @@
     </section>
 
     <section class="chef contenedor">
-      <h2>Chef ejecutivo</h2>
-      <div class="contenido-chef">
+      <h2 data-aos="zoom-in-right">Chef ejecutivo</h2>
+      <div class="contenido-chef" data-aos="zoom-out-right">
         <div class="texto-chef">
           <h3>
             La exelencia esta en la diversidady modo de progresar es conocer y
@@ -228,8 +224,8 @@
           </p>
           <a href="#" class="btn btn-verde">leer Biografia</a>
         </div>
-        <div class="imagen-chef">
-          <img data-src="./assest/img/chef.webp" alt="fotografia del chef" />
+        <div class="imagen-chef" data-aos="zoom-out">
+          <img data-src="./assest/img/chef.webp" alt="fotografia del chef" loading="lazy"/>
         </div>
       </div>
     </section>
@@ -305,5 +301,13 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Duracion de la Animación
+        duration: 2000
+      });      
+    </script>
   </body>
 </html>
