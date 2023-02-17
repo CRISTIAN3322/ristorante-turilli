@@ -15,7 +15,6 @@ const abrirMenu = () => {
   navegacion.classList.remove("ocultar");
   botonCerrar();
 };
-
 const botonCerrar = () => {
   const btnCerrar = document.createElement("p");
   const overlay = document.createElement("div");
@@ -32,7 +31,6 @@ const botonCerrar = () => {
   navegacion.appendChild(btnCerrar);
   cerrarMenu(btnCerrar, overlay);
 };
-
 const cerrarMenu = (boton, overlay) => {
   boton.addEventListener("click", () => {
     navegacion.classList.add("ocultar");

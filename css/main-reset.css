@@ -11,6 +11,7 @@
 }
 
 /* 👉 Modo Oscuro */
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-primario: #f0f0f0;
